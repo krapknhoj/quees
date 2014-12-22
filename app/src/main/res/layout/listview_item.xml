@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/frame">
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="QUESTION 1"
+        android:textColor="@color/actionbar_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:id="@+id/q_num"/>
+
+    <ImageView android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/image_not_available"
+        android:layout_below="@id/q_num"
+        android:layout_margin="20dp"
+        android:id="@+id/q_img" />
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_img"
+        android:text="YOUR DESCRIPTION"
+        android:textColor="@color/actionbar_text"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/q_desc_label"/>
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_desc_label"
+        android:text="duck"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:textColor="@color/actionbar_text"
+        android:paddingLeft="20dp"
+        android:id="@+id/q_desc"/>
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_desc"
+        android:text="BEST GUESS"
+        android:textColor="@color/actionbar_text"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/q_guesses_label"/>
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_guesses_label"
+        android:text="No guesses posted for this question."
+        android:textColor="@color/subtle_text"
+        android:textStyle="italic"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/q_guesses_no_guesses"/>
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_guesses_label"
+        android:text=""
+        android:textColor="@color/actionbar_text"
+        android:textStyle="italic"
+        android:paddingLeft="20dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/q_guesses_best_guess"
+        android:visibility="gone"/>
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_guesses_best_guess"
+        android:text=""
+        android:textColor="#4574f9"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/q_guesses_best_guess_email"
+        android:visibility="gone"/>
+</RelativeLayout>

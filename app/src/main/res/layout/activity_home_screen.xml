@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/body_bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/walle"
+            android:scaleType="fitXY">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="40dp"
+            android:textColor="@color/actionbar_text"
+            android:id="@+id/app_title"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Find those who understand you."
+            android:textColor="@color/light_grey"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:paddingBottom="100dp"
+            android:layout_alignParentBottom="true"/>
+
+        <View android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/strut"
+            android:layout_alignParentLeft="true"
+            android:text="@string/action_login"
+            android:onClick="openLogin"
+            android:layout_alignParentBottom="true"
+            style="@style/SecondaryButton"/>
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/strut"
+            android:layout_alignParentRight="true"
+            android:text="@string/action_signup"
+            android:onClick="openSignup"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

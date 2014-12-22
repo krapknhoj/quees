@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quees</string>
+    <string name="intro_text">You can take a picture using the button below, and Quees will try to guess what it is.</string>
+    <string name="action_login">Log in</string>
+    <string name="action_signup">Sign up</string>
+    <string name="main_action">Take Picture</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_result_activity">Results</string>
+    <string name="title_activity_signup">Sign up</string>
+    <string name="title_activity_main">Quees</string>
+    <string name="title_activity_add">Add Questions</string>
+    <string name="app_camera_name">Take a Picture</string>
+</resources>

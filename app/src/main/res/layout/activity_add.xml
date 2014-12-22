@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView03"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:screenOrientation="portrait"
+    android:configChanges="orientation|keyboardHidden"
+    android:background="@color/body_bg">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/body_bg">
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="ADD YOUR QUESTION HERE"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/actionbar_text"
+            android:background="@color/input_bg"
+            android:id="@+id/banner_add"/>
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:id="@+id/container_img"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/banner_add">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Upload your picture here"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textColor="@color/actionbar_text"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:id="@+id/inst_image"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="170dp"
+                android:layout_below="@id/inst_image"
+                android:id="@+id/img_view_upload"
+                android:src="@drawable/image_not_available"/>
+
+            <Button
+                android:id="@+id/btn_take_picture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Take Picture"
+                android:onClick="openCamera"
+                style="@style/SecondaryButton"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:id="@+id/container_text"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/container_img"
+            android:background="#222222">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Using few words, describe the picture that you have taken."
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textColor="@color/actionbar_text"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:id="@+id/inst_text"/>
+
+            <EditText
+                android:id="@+id/edit_desc"
+                android:layout_width="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/inst_text"
+                android:hint="It doesn't have to make sense"
+                android:gravity="center"
+                android:textColor="@color/actionbar_text"
+                android:background="@color/input_bg"
+                android:layout_marginBottom="70dp"/>
+        </RelativeLayout>
+
+        <View android:id="@+id/strut_add"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/container_text"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/strut_add"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="Close"
+            android:onClick="goBackToMainActivity"
+            style="@style/SecondaryButton"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/strut_add"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Submit Question"
+            android:onClick="submitQuestion"/>
+
+        <LinearLayout android:id="@+id/center_control_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBarSubmit"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

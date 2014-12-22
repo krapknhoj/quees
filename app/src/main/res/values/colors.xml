@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="black">#222222</color>
+   <color name="actionbar_text">#efefef</color>
+   <color name="light_grey">#cfcfcf</color>
+   <color name="actionbar_bg">#3b3b48</color>
+   <color name="body_bg">#2e2e3b</color>
+   <color name="subtle_text">#666666</color>
+   <color name="btn_orange">#f16c00</color>
+   <color name="btn_blue">#008fed</color>
+   <color name="input_bg">#333333</color>
+</resources>
